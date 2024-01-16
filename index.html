@@ -455,15 +455,25 @@
             .arte{
                 background-color: #3c3c3c21;
             }
-            .art img {
-                width: 75%;
-            }
             .art th{
-                width: 10%;
-                height: 50%;
+                width: 60%;
+                height: auto;
+            }
+            .art2 th{
+                width: 40%;
+                height: auto;
             }
             .art table{
                 width: auto;
+            }
+            .art2 , .art{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .art2 table{
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
             }
             @keyframes mem {
   0%   {top: 0px; left: 0px; background-image: url("adem.jpg") ;}
@@ -486,32 +496,32 @@
   95% {top: 0px; left: 0px;  background-image: url("azizlamari.jpg");}
   100%   {top: 0px; left: 0px; background-image: url("adem.jpg");}
 }
+            .art tr{
+                margin-top: 7px
+            }
             .art img{
-                height: 30vh;
-                width: 70%;
+                width: 60vw;
                 margin-bottom: -7px;
                 margin-top: 50px;
                 box-shadow: 0 0 10px #000000;
+                height: 35vh;
+                margin-left: auto;
             }
             .art2 img{
-                height: 3vh;
+                height: 2px;
+                margin-bottom: -7.5px;
+                width: 80%;
             }
             .mem1 img{
-                height:20vh;
                 margin-bottom: -7px;
                 box-shadow: 0 0 10px #000000;
-                border: 5px solid #262626;
+                height: 29vw;
+                border: 4px solid #00000093;
               }
-            
-            .mem2 {
-                height: 1vh;
-                width: 40px;
-                margin-bottom: -15px;
-            }
            .mem2 img{
-            height: 3vh;
+            height: 34vw;
             box-shadow: 0 0 10px #000000;
-            border: 5px solid #262626;
+            border: 4px solid #00000093;
               }
               @keyframes butt{
   0%   {top: 0px; left: 0px; border: 5px solid #262626;}
@@ -614,22 +624,8 @@
             background-size: cover;
             
             }
-            .art img{
-                height: 33vw;
-            }
 
-            .art2 img{
-                height: 35vw;
-                margin-bottom: -7.5px;
-                width: 70%;
-            }
-            .art2 th{
-                width: 5%;
-                height: 10%;
-            }
-            .art2 table{
-                width: auto;
-            }
+            
             #overlay img{
                 width: 10vw;
                 height: 10vw;
@@ -682,6 +678,9 @@
         .espace{
             width: 20%;
         }
+        button{
+            cursor: pointer;
+        }
         input {
             border:0;   
             width: 50vw;
@@ -694,7 +693,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: -20px;
-            
+            padding-left: 5px;
         }
         input::placeholder {
             color: rgb(146, 133, 133);
@@ -721,6 +720,8 @@
             background-color: #1a1a1ab9;
             color: white;
             text-shadow: 0 0 3px black, 0 0 5px black;
+            background: url(quds.jpg) no-repeat center ;
+            background-size: cover;
         }
         .quote2 p {
             font-size: 5vh;
@@ -948,6 +949,18 @@
             .esp{
                 width: 20%;
             }
+            .tan9is{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .arte{
+                background: url(museum.webp) no-repeat center center fixed;
+            background-size: cover;
+            }
+            .tadhlil{
+            background-color: rgba(0, 0, 0, 0.603);
+        }
 </style>
 
 <body onload="alertt()">
@@ -1055,6 +1068,7 @@
 <hr>
 </Br>
 <br>
+<div class="tan9is">
 <center>
 <table border="0" class="lista1">
     <tr><br><br></tr>
@@ -1101,6 +1115,7 @@
 </tr>
 </center>
     </table>
+
 <table border="0" class="lista1">
     <tr><br><br></tr>
     <tr>
@@ -1127,12 +1142,14 @@
 </div>
 </br>
 </br>
+</div>
 </section>
 <section class="liste2">
     <div class="container">
 <hr class="hrbanner">
 <br>
 <br>
+<div class="tan9is">
 <table border="0" class="lista1">
     <tr><br><br></tr>
     <tr>
@@ -1184,6 +1201,7 @@
 </br>
 </br>
 </br>
+</div>
 </section>
 
 
@@ -1262,6 +1280,7 @@
 
     <section class="quote2">
         <div id="quote2">
+            <div class="tadhlil">
             <br>
             <table class="tq" border="0">
                 <tr>
@@ -1291,6 +1310,7 @@
         <br>
         <hr class="hrbanner">
     </div>
+</div>
 </section>
 <br>
 <br>
@@ -1318,6 +1338,17 @@
     <tr><th><br><br><br></th></tr>
     <tr><th colspan="2" class="mem1"><a href="img4.jpg"><img src="img4.jpg" height="100" width="200"></a></th></tr>
     <tr><th><br><br><br></th></tr>
+    </table>
+    <table border="0" class="art2">
+
+   
+        <tr>
+            <th class="mem2"><a href="img6.jpg"><img src="img6.jpg" ></a></th>
+            <th class="mem2"><a href="img7.jpg"><img src="img7.jpg" ></a></th>
+        </tr>
+    
+    </table>
+    <table border="0" class="art">
     <tr>
     
         <th colspan="2" class="mem1"><a href="img2.jpg"><img src="img2.jpg" height="100" width="200"></a></th>
@@ -1328,15 +1359,7 @@
     <tr><th colspan="2" class="mem1"><a href="img1.jpg"><img src="img1.jpg" height="100" width="200"></a></th></tr>
     <tr><th><br><br><br></th></tr>
 </table>
-        <table border="0" class="art2">
-
-   
-    <tr>
-        <th class="mem2"><a href="img6.jpg"><img src="img6.jpg" ></a></th>
-        <th class="mem2"><a href="img7.jpg"><img src="img7.jpg" ></a></th>
-    </tr>
-
-</table>
+        
 <br><br><br>
 </section>
 </div>
