@@ -129,6 +129,11 @@
                 animation-duration: 9s;
                 animation-iteration-count: infinite;
             }
+            .animat{
+                animation: ddd;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
 
             .container{
                 
@@ -158,8 +163,8 @@
                 margin-right: auto;
                 border-radius: 100px;
                 font-size: 90vw;
-}
-.pquote2{
+            }
+            .pquote2{
                 border-radius: 0;      
                 font-family: Allerta Stencil;
                 border-width: 100%;
@@ -168,7 +173,8 @@
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 100px;
-}.pquote2ar ,.pquote2arr{
+            }
+            .pquote2ar ,.pquote2arr{
                 border-radius: 0;      
                 font-family: Lateef;
                 border-width: 100%;
@@ -177,10 +183,10 @@
                 margin-right: auto;
                 border-radius: 100px;
                 width: 60%;
-}
-.pquote2arr{
-    width: 100%;
-}
+            }
+            .pquote2arr{
+                width: 100%;
+            }
             
             .container span{
                 color: white;
@@ -411,6 +417,9 @@
             .bg{
                 background-color: #000000b0;
             }
+            .b:hover{
+                transform: scale(0.9);
+              }
             .liste2 {
                 background-color: #0000008f;
             }
@@ -678,6 +687,9 @@
         .espace{
             width: 20%;
         }
+        .espace2{
+            width: 5%;
+        }
         button{
             cursor: pointer;
         }
@@ -722,6 +734,26 @@
             text-shadow: 0 0 3px black, 0 0 5px black;
             background: url(quds.jpg) no-repeat center ;
             background-size: cover;
+        }
+        .quote2:hover{
+            animation: backquds;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes backquds{
+            0%{background: url(quds.jpg) no-repeat center ;
+            background-size: cover;}
+            5%{background: url(quds.jpg) no-repeat center ;
+            background-size: cover;
+            }
+            10%{background: url(quds.gif) no-repeat center ;
+            background-size: cover;
+            }
+            95%{background: url(quds.gif) no-repeat center ;
+            background-size: cover;
+            }
+            100%{background: url(quds.jpg) no-repeat center ;
+            background-size: cover;}
         }
         .quote2 p {
             font-size: 5vh;
@@ -891,6 +923,23 @@
                  border-radius: 8px;
                 box-shadow: 0 0 10px #666;
               }
+              .fq:hover{
+                animation: backfq;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes backfq{
+                0%{background-color: #00000093;}
+                5%{background-color: #00000093;
+                }
+                10%{background: url(classe.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                80%{background: url(classe.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                100%{background-color: #00000093;}
+            }
               .margauot{
                 margin: auto;
               }
@@ -955,11 +1004,201 @@
                 margin-right: auto;
             }
             .arte{
-                background: url(museum.webp) no-repeat center center fixed;
+                background: url(museum.webp) no-repeat center ;
             background-size: cover;
             }
             .tadhlil{
             background-color: rgba(0, 0, 0, 0.603);
+        }
+        #knowwmore{
+                border: 1px solid white;
+                background-color: black;
+                color: white;
+                transition: 0.5s;
+                width: auto;
+                font-size: 2.3vh;
+                padding: 2%;
+                font-variant: small-caps;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5px;
+                margin-bottom: 15px;
+              }
+              #knowwmore:hover{
+                border: 1px solid black;
+                background-color: #ffffff8f;
+                color: black;
+              }
+            .dakhle{
+                background-color: #171718;
+                width: 100%;
+                height: 100%;
+                color: white;
+            }
+            .dakhle p, .h2d, .h3d{
+                text-align: left;
+            }
+            .tda{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            .tda img{
+                width: 80%;
+            }
+            .mybeqq{
+                margin-left: auto;
+                margin-right: auto;
+              }
+              .mybeqimgg{
+                display: block;
+                width: 7vw;
+                height:7vw;
+                border-radius: 50%;
+              }
+            #bc{
+                margin-top: 100px;
+                margin-bottom: 150px;
+            }
+            .sd  {
+                font-family: 'Open Sans', sans-serif;
+                color: rgb(206, 206, 206);
+                font-weight: 10;
+                font-size: 1.3vw;
+            }
+            .sdd{
+                font-family: 'Open Sans', sans-serif;
+                color: rgb(206, 206, 206);
+                font-weight: 10;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sddd{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.5vw;
+            }
+            .h2d , .h2dd{
+                font-family:Nova Flat;
+            }
+            .h2dd{
+                font-size: 3vw;
+            }
+
+            .h3d{
+                font-weight: 20;
+                color: #e6e6e6;
+            }
+            
+            .dimg1:hover{
+                animation: dimg1;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes dimg1{
+                0%{background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;}
+                3%{background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;
+                }
+                8%{background: url(backhriga.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                80%{background: url(backhriga.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                100%{background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;}}
+            .dimg2{
+                width: 40%;
+                height: 35vh;
+                margin-top: -10px;
+                margin-bottom: -10px;
+            }
+            .dimg2 img{
+                width: 50%;
+                height: 35vh;
+            }
+            .th1 .sd,.h2d{
+                margin-left: 10px;
+            }
+            .tda2{
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                height: 10vh;
+            }
+            .tda2 img{
+                width: 90%;
+                border: 1px solid black;
+                height: 50vh
+            }
+            .dimg1{
+                width: 40%;
+                height: 30vh;
+                background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;
+                margin-top: -20px;
+                margin-bottom: -20px;
+            }
+            .dimg1 img{
+                border: 0px;
+            }
+            .tda2 .part2 img{
+                margin-top: -40px;
+                width: 100%;
+            }
+            .akber{
+                height: 40vw;
+            }
+            .akber th img{
+                height: 100%;
+            }
+            .lespace{
+                height: 40px;
+            }
+            .thth{
+                text-align: center;
+            }
+            .tbequest{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .tbequest tr{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .white{
+                color: white;
+            }
+            .le{
+                width: 80%;
+            }
+            .b{
+                width: auto;
+                padding: 10px 30px;
+                
+            }
+            .backblanchhh{
+                background-color: white;
+                padding-top: 20px;
+                width: 45vw;
+                padding-bottom: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        /*custom scroll bar from the internet*/
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: #525252;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #262626;
+            border-radius: 10px;
         }
 </style>
 
@@ -1207,7 +1446,87 @@
 
 </div>
 </section>
+<section class="dakhla" id="dakhla">
+<hr>
+<hr>
+<hr>
+<div class="container">
+<span class="text1"><span class="margauto">Our</span></span>
+<span class="text2"><span class="margauto">Big Thing</span></span></div>
+<hr>
+<hr>
+<hr>
 
+    <div class="obt" id="bc">
+        <div class="backblanchhh">
+       <center> <h2 class="h2" id="timeleft">loading</h2><br><br><br>
+       <button onclick="sound()" class="b"><img src="lock.png" width="50" height="50"></button></center></div>
+    </div>
+    
+    <div class="dakhle" id="ac">
+        <div class="dakhle">
+            <div class="tan9is">
+            <br>
+            <center><img src="crown.png" height="125" width="125"></center><br>
+            <table class="tda" border="0">
+                <tr>
+                    <th class="th1"><h2 class="h2dd">Arabic King</h2>
+                        <br><p class="sddd">We decided that nothing can represent us more than our arabic idendity, culture, history and especially our <span class="gold">Golden Age</span>.</p></th>
+                        <th class="espace2"></th>
+                        <th class="dimg2"><img src="persdakhla.jpg"></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><br><br></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><br><br></th>
+                </tr>
+                <tr>
+                    <th class="dimg1"></th>
+                    <th class="espace2"></th>
+                    <th><h2 class="h3d">About</h3><br><p class="sd"><span class="gold">Vini</span>, <span class="gold">Vidi</span>, <span class="gold">Vici</span> : ("<span class="white">I came, I saw, I conquered</span>") is a Latin phrase used to refer to a swift, conclusive victory.  The phrase is popularly attributed to Julius Caesar.
+                    </p> <br><br><button id="knowwmore" onclick="link()">&nbsp;Know More&nbsp;</button></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><br><br></th>
+                </tr>
+            </table>
+    </br>
+    <hr><hr>
+    </br>
+    <table class="tda2" border="0">
+        <tr>
+            <th colspan="3" class="thth"><h3 class="h33">Dakhla</h3></th>
+        </tr>
+        <tr>
+            <th colspan="3" class="thth"><h4 class="sdd">100% original idea 🏳️</h4></th>
+            </tr>
+        <tr>
+            <th class="lespace" colspan="3">&nbsp;</th>
+        </tr>
+        <tr class="akber">
+            <th class="p1"><img src="p1.jpg"></th>
+            <th class="part2"><img src="p2.jpg"></th>
+            <th><img src="p3.jpg"></th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table border="0" class="mybeqq">
+        <tr>
+        <th><img src="pytho.png" class="mybeqimgg"></th><th>&nbsp;&nbsp;&nbsp;</th>
+        <th class=""><a href="https://www.instagram.com/mono.graphics/"><img src="mono.jpg" class="mybeqimgg"></a></th>
+    </tr>
+    </table>
+    </br>
+    </br>
+    </br>
+    </div>
+    </div>  
+    </div>
+    
+    </section>
 <section class="arte">
 <div id="artee">
     <div class="contact" >
@@ -1371,12 +1690,14 @@
     </tr><tr><th><br></th></tr><tr><tr><th><hr class="hrmybeq"></th></tr><tr><th><br></th></tr><tr>
 <th><p class="mybequest2">2K25  2K26  2K27  2K28  2K29  2K30</p></th></tr>
     </tr></table>
+    
         <br><table border="0" class="mybeq">
             <tr>
             <th><img src="pytho.png" class="mybeqimg"></th><th>&nbsp;&nbsp;&nbsp;</th>
             <th><img src="tunisia.gif" class="mybeqimg"></th>
         </tr>
-    </table><br><br><button id="knowmore" onclick="history()">Discover how we did all of this</button>
+    </table><br><p class="mybequest">total number of lines: <span class="animat">1850</span>.</p>
+    <br><br><button id="knowmore" onclick="history()">Discover how we did all of this</button>
     <br><br><br>
 </div>
 
@@ -1391,6 +1712,9 @@
 
 
 <script>
+    LetTheDogsOut=true;
+    dakhla=document.getElementById("dakhla");
+    document.getElementById("dakhla").style.display="none";
     left=document.getElementById("left");
     right=document.getElementById("right");
     body=document.getElementById("all");
@@ -1412,7 +1736,7 @@
     artee.style.display="none";
     memss.style.display="none";
     document.getElementById("mybequest").style.display="none";
-    /* js is a mess that i would rather ignore */
+    /* js is a mess that i prefer to ignore */
     ol=document.getElementById("overlay");
     window.addEventListener("load",function(){
         ol.style.display="none";
@@ -1424,6 +1748,31 @@
         verif(e);
     }
 });
+function hide(){document.getElementById("alert").style.display="none";}
+var countDownDate = new Date("FEB 26, 2023 16:00:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("timeleft").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timeleft").innerHTML = "Just a Moment!";
+  }
+}, 1000);
+a=document.getElementById("ac");
+b=document.getElementById("bc");
+a.style.display="none";
+document.addEventListener('contextmenu', event => event.preventDefault());
+function sound(){
+    if (document.getElementById("timeleft").textContent == "Just a Moment!" && LetTheDogsOut==true){
+        document.getElementById("ac").style.display="inline";
+     b.style.display="none";}
+    }
 st="";
 s1=0;
 s2=0;
@@ -1462,7 +1811,7 @@ function verif(){
         a=document.getElementById("t1").value="";
         messagef.innerHTML ="";
         document.getElementById("skip").style.display="none";
-        setTimeout(open, 2000);
+        setTimeout(veriff, 1500);
     }
     
     if (a !="" && a!="@import tools" && a!="-GET Access") {
@@ -1492,11 +1841,12 @@ function open(){
         left.style.display="inline";
         right.style.display="inline";
         document.getElementById("mybequest").style.display="inline";
+        dakhla.style.display="inline";
 }
 document.addEventListener('contextmenu', event => event.preventDefault());
-function createall(){
-    
-    }
+function link() {
+  window.location.href = "https://en.wikipedia.org/wiki/Veni,_vidi,_vici#:~:text=Veni%2C%20vidi%2C%20vici%20(Classical,to%20a%20swift%2C%20conclusive%20victory.";
+  }
     function history() {
   window.location.href = "https://bacinfo2024.github.io/history/";
   }
