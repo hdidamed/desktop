@@ -1,19 +1,19 @@
 <!doctype html>
 <html>
     <head>
-        <title>BAC INFO 2024</title>
+        <title>4SI 2024</title>
         <meta charset="utf-8">
-        <link rel="icon" type="image/png" href="pytho.png" sizes="128x128" />
+        <link rel="icon" type="image/png" href="pytho.png" sizes="172x172" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Bahianita&family=Gulzar&family=Salsa&display=swap" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Dekko'rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+        
         <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bahianita&family=Gulzar&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/bootstrap.min.css"></head>
     </head>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
 <style>
     @import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
     *{
@@ -22,33 +22,48 @@
             }
             header{
                 height:60px;
-                background: #262626 ;
-                padding: 0 50px;
+                background: #252324;
+                top: 0px;
                 text-align: center;
                 animation: header 4s ;
+                position: fixed;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                z-index: 3;
             }
             body{
-                
+                /*overflow:hidden;*/
+}
+            section{
+               /* scroll-snap-type:y mandatory;*/
             }
-            .title{     
+            
+            .title{
+                float: center;
+                width:auto;
                 margin-left: auto;
                 margin-right: auto;
                 color:#fff;
                 font-weight:bold ;
                 text-transform: uppercase;
                 line-height: 60px;
+                font-size: 1.8vmax;
                 font-family:Nova Flat ;
-                font-size: 20px;
-                text-shadow:0 0 20px #FFD700;
+                text-shadow:0 0 20px #FFD700,0 0 20px #FFD700,0 0 20px #FFD700;
                 text-align: center;
                 animation: dd;
                 animation-duration: 1s;
                 animation-iteration-count: infinite;
+                margin-top: -5px;
+                
             }
-           
-            
+            html {
+                scroll-behavior: smooth;
+            }
             .banner{
-            height:100%;
+            height:60%;
             }
 
             .hrbanner{
@@ -56,7 +71,7 @@
                 background-color: #262626;
                 margin-top: -5px;
                 animation: hr;
-                animation-duration: 4s;
+                animation-duration: 6s;
                 animation-iteration-count: infinite;
                 height: 10px;
                 border: 0;
@@ -72,110 +87,106 @@
   87.5%  {top: 10px; left: 0px; background-color: #262626;}
   100% {top: 0px; left: 0px; background-color: #262626;}
 }
-
             .banner img{
+                margin-top: 20px;
                 width: 100%;
                 height: 80vh;
             }
             
             .about p{
-                font-size: 18px;
+                font-size: 4vh;
                 line-height: 1.7;
                 font-family: Allerta Stencil;
-                text-shadow: 0 0 3px black, 0 0 5px black; 
                 margin-bottom: 25px;
             }
             .asami{
-                font-size: 18px;
+                font-size: 4vh;
                 line-height: 1.7;
                 font-family:Nova Flat ;
                 margin-bottom: auto;
-                text-shadow: 0 0 3px black, 0 0 5px black; 
                 color: white;
+                text-shadow: 0 0 3px black, 0 0 5px black; 
+            }
+            section{
+
             }
             .desc{
                 font-family: dekko;
-                color: #919090;
+                color: #808080;
                 margin-bottom: 20px;
-            }
-            .desci{
-                font-family: dekko;
-                margin-bottom: 20px;
-                background: -webkit-linear-gradient(#ff9100 , #ff00c8 );
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            .instacolor{
-                
+                font-size: 2vw;
             }
             footer{
-                background: #000000;
+                background: #141414;
                 color: #fff;
                 padding: 15px 50px;
-                
+                text-align: center  ;
+                font-size: 20px;
             }
             
-            
+            .name{ font-family:Nova Flat ;
+                animation: ddd;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
+            .animat{
+                animation: ddd;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
 
             .container{
                 
             }
             .quote{
-                font-family:  Nova Flat;
-                
-                
+                font-family: Allerta Stencil;
+                text-shadow: 0 0 3px black, 0 0 5px black; 
+                color: white;
+                letter-spacing: 2px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .backg{
+                background-color: #3333335e;
             }
             .quote img{
-                width: 10px;
-                height: 3px;
+                width: 5vh;
+                height: 5vh;
             }
             .pquote{
                 border-radius: 0;      
-                font-family: 'Salsa', cursive;
+                font-family: Allerta Stencil;
                 border-width: 100%;
                 width: 80%;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 100px;
-                text-shadow: 0 0 3px black, 0 0 5px black; 
-                color: white;
-}
-.pquote2{
+                font-size: 90vw;
+            }
+            .pquote2{
                 border-radius: 0;      
-                font-family:Nova Flat ;
+                font-family: Allerta Stencil;
                 border-width: 100%;
                 font-size: large;
                 width: 80%;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 100px;
-}.pquote2ar ,.pquote2arr{
+            }
+            .pquote2ar ,.pquote2arr{
                 border-radius: 0;      
                 font-family: Lateef;
                 border-width: 100%;
-                font-size: 26px;
-                width: 90%;
+                font-size: 9vw;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 100px;
-                text-shadow: 0 0 3px black, 0 0 5px black; 
-                color: white;
-}
-            .quote2{
-                background: url(quds.jpg) no-repeat center ;
-            background-size: cover;
+                width: 60%;
             }
-.quote2arr{
-    width: auto;
-   
-}
-.arabquote{
-    font-family: 'Gulzar', serif;
-    color: white;
-    font-size: 22px;
-    text-shadow: 0 0 3px black, 0 0 5px black; 
-    width: 90%;
-}
+            .pquote2arr{
+                width: 100%;
+            }
             
             .container span{
                 color: white;
@@ -183,11 +194,12 @@
                 display: block;
                 background: #262626;
                 text-shadow:0 0 20px #FFD700;
-
+                font-family:Nova Flat ;
                 text-align: center;
             }
             .text1{
-
+                width: auto;
+                font-family:Nova Flat ;
                 font-size: 60px;
                 letter-spacing: 8px;
                 position: relative;
@@ -196,16 +208,10 @@
                 animation: ddd 3s;
                 animation: text 3s 1;
             }
-            .text1:hover{
-                text-shadow:0 0 20px #1900ff;
-            }
-            .text2:hover{
-                text-shadow:0 0 20px #1900ff;
-            }
             .text2{
                 font-size: 30px;
-                
-
+                font-family:Nova Flat ;
+                width: auto;
             }
             @keyframes text{
                 0%{
@@ -222,25 +228,25 @@
                 }  
             } 
 
-            
+           
             .container img{
                 width: 40%;
                 height: 30%;
                 margin-left: auto;
                 margin-right: auto;
-                
 
             }
             .tsawer img {
-                width: 85px;
-                height: 85px;
+                width: 8vw;
+                height: 8vw;
                 border-radius: 20px;
                 }
-            .container img:hover {
-                box-shadow:0 0 20px #262626;
+            .tsawer :hover {
+                box-shadow:0 0 20px #d3d3d3d5;
             }
             .contact span{
                 color: white;
+                font-family:Nova Flat ;
                 text-transform: uppercase; 
                 display: block;
                 background: #262626;
@@ -301,7 +307,17 @@
             } 
             .contact {background-color: #3c3c3c21;
             } 
-            
+            @keyframes ddd {
+  0%   {top: 0px; left: 0px; color: #c5c5f394;}
+  12.5%  {top: 0px; left: 10px; color: rgb(172, 172, 250);}
+  25%  {top: 10px; left: 10px; color: #d2f9f6;}
+  37.5%  {top: 10px; left: 0px; color: rgb(182, 177, 253);}
+  50% {top: 0px; left: 0px; color: #c5c5f394;}
+  62.5%  {top: 0px; left: 10px; color: rgb(172, 172, 250);}
+  75%  {top: 10px; left: 10px; color: #d2f9f6;}
+  87.5%  {top: 10px; left: 0px; color: rgb(182, 177, 253);}
+  100% {top: 0px; left: 0px; color: #c5c5f394;}
+}
 @keyframes d {
   0%   {top: 0px; left: 0px; background-color: rgba(172, 172, 250, 0.568);}
   12.5%  {top: 0px; left: 10px; background-color: rgba(172, 172, 250, 0.74);}
@@ -321,13 +337,14 @@
   100%   {top: 0px; left: 0px;text-shadow:0 0 20px #ffd900a9;}
 }
 @keyframes quote {
-  0%   {top: 0px; left: 0px;}
- 30% {top: 0px; left: 0px;text-shadow: 0 0 3px black, 0 0 5px  #ffffffd5;}
-  70% {top: 0px; left: 0px; text-shadow: 0 0 3px black, 0 0 5px  #ffffffd5;}
-  100%   {top: 0px; left: 0px;}
+  0%   {top: 0px; left: 0px;text-shadow:0 0 20px #ffd900;}
+  25% {top: 0px; left: 0px; text-shadow:0 0 20px #9e8600d5;}
+  50% {top: 0px; left: 0px; text-shadow:0 0 20px #3f3600;}
+  75% {top: 0px; left: 0px; text-shadow:0 0 20px #998200d3;}
+  100%   {top: 0px; left: 0px;text-shadow:0 0 20px #ffd900a9;}
 }
 .pal{
-    width: 1px;
+    width: 30px;
 }
             .contact marquee {
                 font-size: 30px;
@@ -339,16 +356,15 @@
                 font-weight: 900;
                 text-shadow:0 0 20px rgb(0, 255, 0);
                 color: green;
-               
-                
+                transition: 1s;
             } 
             .contact marquee img{
                 transition: 1s;
             }
             .contact marquee img:hover{
-                width: 250px;
+                width: 300px;
             }
-            
+           
             .quote img{
                 width: 20%;
                 height: 20%;
@@ -365,36 +381,67 @@
                 font-family: sans-serif;
                 text-align: center;
                 animation: quote;
-                animation-duration: 5s;
+                animation-duration: 2s;
                 animation-iteration-count: infinite;
+            }
+            .arabquote{
+                font-family: 'Gulzar', serif;
+                 color: white;
+                font-size: 22px;
                 text-shadow: 0 0 3px black, 0 0 5px black; 
+                width: 90%;
+            }
+            .green{
+                color: green;
+            }
+            .red{
+                color: red;
             }
             .hrquote{
-                width: 13%;
+                width: 9%;
                 height:5px;
                 margin-left: auto;
                 margin-right: auto;
                 background-color: #262626;
-                margin-top: 3%;
+                margin-top: 1%;
+                margin-bottom: 40px;
                 border: 0;
-                margin-bottom: 10px;
+                border-bottom: 1px solid white;
             }
+            .section{
+                background-color: #0000008f;
+            }
+            .liste1{
+                background-color: #0000008f;
+            }
+            .bg{
+                background-color: #000000b0;
+            }
+            .b:hover{
+                transform: scale(0.9);
+              }
             .liste2 {
-                background-color: #3c3c3c21;
+                background-color: #0000008f;
             }
             .memories{
+                box-shadow: 0 0 10px #000000;
                 animation: mem;
                 animation-duration: 60s;
                 animation-iteration-count: infinite;
-                width: 70%;
-                height: 200%;
-                background-image: url("adem.jpg") no-repeat center center fixed;
-            background-size: cover;
+                width: 40vw;
+                height: 30vw;
+                background-color: #000;
+                background-image: url("adem.jpg") ;
+                background-size: cover;
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
-                min-height: 200px;
-                box-shadow: 0 0 10px #000000;
+                min-height: 20vw;
+                animation-fill-mode: forwards;
+            }
+            .memories:hover{
+                animation-duration: 20s;
+                animation-fill-mode: forwards;
             }
             .pmemories{
                 
@@ -405,8 +452,8 @@
 
             }
             .flags img{
-                width: 50px;
-                height: 30px;
+                width: 70px;
+                height: 40px;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -417,19 +464,28 @@
             .arte{
                 background-color: #3c3c3c21;
             }
-            .art img {
-                width: 100%;
-                height: 10%;
-            }
             .art th{
-                width: 10%;
-                height: 50%;
+                width: 60%;
+                height: auto;
+            }
+            .art2 th{
+                width: 40%;
+                height: auto;
             }
             .art table{
                 width: auto;
             }
+            .art2 , .art{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .art2 table{
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
             @keyframes mem {
-  0%   {top: 0px; left: 0px; background-image: url("adem.jpg");}
+  0%   {top: 0px; left: 0px; background-image: url("adem.jpg") ;}
   5% {top: 0px; left: 0px;  background-image: url("ahmed.jpg");}
   11% {top: 0px; left: 0px;  background-image: url("achref.jpg");}
   16% {top: 0px; left: 0px;  background-image: url("akrem.jpg");}
@@ -449,81 +505,76 @@
   95% {top: 0px; left: 0px;  background-image: url("azizlamari.jpg");}
   100%   {top: 0px; left: 0px; background-image: url("adem.jpg");}
 }
-            .art1 img{
-                height: 40vh;
-                width: 70%;
+            .art tr{
+                margin-top: 7px
+            }
+            .art img{
+                width: 60vw;
                 margin-bottom: -7px;
                 margin-top: 50px;
                 box-shadow: 0 0 10px #000000;
+                height: 35vh;
+                margin-left: auto;
             }
             .art2 img{
-                height: 40vh;
-                margin-bottom: -7px;
-               
+                height: 2px;
+                margin-bottom: -7.5px;
+                width: 80%;
             }
             .mem1 img{
-                height:40vh;
                 margin-bottom: -7px;
                 box-shadow: 0 0 10px #000000;
-            }
-            .mem2 img{
-                height: 38vh;
-                width: 35hv;
-                margin-bottom: -15px;
-                box-shadow: 0 0 10px #000000;
-            }
-            video{
-                width: 100%;
-            }
+                height: 29vw;
+                border: 4px solid #00000093;
+              }
+           .mem2 img{
+            height: 34vw;
+            box-shadow: 0 0 10px #000000;
+            border: 4px solid #00000093;
+              }
+              @keyframes butt{
+  0%   {top: 0px; left: 0px; border: 5px solid #262626;}
+  12.5%  {top: 0px; left: 10px; border: 5px solid #262626;}
+  25%  {top: 10px; left: 10px; border: 5px solid #a78e00;}
+  37.5%  {top: 10px; left: 0px; border: 5px solid #262626;}
+  50% {top: 0px; left: 0px; border: 5px solid #262626;}
+  62.5%  {top: 0px; left: 10px;  border: 5px solid #262626;}
+  75%  {top: 10px; left: 10px; border: 5px solid #a78e00;}
+  87.5%  {top: 10px; left: 0px; border: 5px solid #262626;}
+  100% {top: 0px; left: 0px; border: 5px solid #262626;}
+}
+           
             .accentgrave{
-                font-size: 400%;
+                font-size: 6vw;
                 color: white;
-                animation: acg;
-                top: 1;
-                left: 1;
-                position: absolute;
-                margin-left: 20%;
+                margin-top: -10px;
                 font-weight: normal;
-                animation-duration: 20s;
-                animation-iteration-count: infinite;
+                width: 15vw;
+            }
+            .accentgrave2{
+                font-size: 6vw;
+                color: white;
+                font-weight: normal;
+                width: 15vw;
             }
             .accentaigu{
-                font-size: 405%;
+                font-size: 6vw;
                 color: #FFD700;
-                position: absolute;
-                 top: 1;
-                 right: 0;
-                 text-align:right;
-                 margin-right: 20%;
                  font-weight: normal;
-                 animation: aca;
-                 animation-duration: 20s;
-                animation-iteration-count: infinite;
-            }
-            @keyframes aca{
-                0%   {color: #FFD700;}
-                25% {color:white;}
-                50% {color: #FFD700;}
-                75% {color:white;}
-                100% {color: #FFD700;}
-            }
-            @keyframes acg{
-                0%   {color: white;}
-                25% {color: #FFD700;}
-                50% {color: white;}
-                75% {color: #FFD700;}
-                100% {color: white;}
+                 margin-top: -10px;
+                 width: 15vw;
             }
             .amoud{
-                box-shadow: 0 0 10px black;
+                box-shadow: 0 0 10px #000000;
                 border-radius: 50%;
-                width: 20%;
+                width: 7vw;
+                height: 7vw;
             }
-            hr{}
             .amoud img{
-                width: 100%;
-                height: 100%;
+                width: 7vw;
+                height: 7vw;
                 margin-bottom: -5%;
+                transition: 1s;
             }
             #body{
                 border-radius: 0;      
@@ -537,9 +588,6 @@
             h2{
                 font-family:"Allerta Stencil";
                 width: 80%;
-            } 
-            .amoud img{
-                transition: 1s;
             }
             .amoud img:hover{
                 transform: scale(1.1);
@@ -549,85 +597,245 @@
                 width: 100%;
             }
             .lista1 th{
-                width: 33%;
+                width: 25%;
             }
             .lista2{
                 text-align: center;
                 width: 70%;
+                
+            }
+            .lista1 img{
+                transition: 1s;
+            }
+            .lista2 img{
+                transition: 1s;
             }
             .lista2 th{
-                width: 50%;
+                width: 33.33%;
             }
-            .lista1 .tsawer{
-                transition: 1s;
-            }
-            .lista2 .tsawer{
-                transition: 1s;
-            }
-            .lista1 .tsawer:hover{
+            .lista1 img:hover{
                 transform: scale(1.1);
             }
-            .lista2 .tsawer:hover{
+            .lista2 img:hover{
                 transform: scale(1.1);
             }
             .gold{
                 color: #FFD700;
             }
-            .underall{
-              background: url(19.gif) no-repeat center center fixed;
-            background-size: cover;
-            }
-            .tadhlil{
-                background-color: #1a1a1ab2;
-            }
-            .tadhlil_khfif{
-                background-color: #1a1a1a4d;
-            }
-            .obt{
+            .all{
                 margin-left: auto;
                 margin-right: auto;
-                background-color: #ffffff;
-                width: 80%;
-                padding: 3%;
-                box-shadow: 0 0 10px#000000;
+                border-right-style: solid;
+                border-left-style: solid;
             }
-            .obt button{
+            .underall{
+              background: url(gif34.gif) no-repeat center center fixed;
+            background-size: cover;
+            
+            }
+
+            
+            #overlay img{
                 width: 10vw;
                 height: 10vw;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
-                margin-top: 2vw;
             }
-            .obt button img{
-                height: 100%;
-                width: 100%;
+            .accent{
+                margin-left:-10vw;
             }
-            .div{
-                background-color: #1a1a1ab2;
-                width: 100%;
-                height: 100%;
-                color: white;
-            }
-            .div img{
-                width: 100%;
-                height: 40vw;
-            }
-            .banner {
-                position: relative;
-                display: inline-block;
-                width: 100%;
-            }
+            .h3{
+           color: #FFD700; 
+           font-family: "Arial";
+           font-size: 2vw;
+           margin: 10px 0 0 10px;
+           text-shadow: 0 0 3px black, 0 0 5px black; 
+           white-space: nowrap;
+           overflow: hidden;
+           width: 100%;
+           margin-left: auto;
+           margin-right: auto;
+           animation: type 8s steps(60, end); 
+        }
 
-            .banner img {
-                display: block;
-                width: 100%;
-                height: 90vw;
+ 
+         @keyframes type{ 
+          from { 
+               width: 0; 
+               } 
+           }
+           input::placeholder {
+            color: rgb(146, 133, 133);
+        }
+        button {
+            padding: 2%;
+            font-weight: bolder;
+            width: 60px;
+            text-shadow: 0 0 15px black;
+            border-bottom:2px solid transparent;
+            color: #FFD700;
+            background-color: #171717;
+            margin-top: -2vw;
+            margin-bottom: -2vw;
+        }
+        button:hover {
+            transform: scale(0.9);
+            border-bottom: 2px solid white;
+        }
+        .command{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .espace{
+            width: 20%;
+        }
+        .espace2{
+            width: 5%;
+        }
+        button{
+            cursor: pointer;
+        }
+        input {
+            border:0;   
+            width: 50vw;
+            height: 2vw;
+            color: #088000;
+            font-size: 1.15vw;
+            border-top: 2vw #2b2b2b;
+            background-color: #0c0c0c;
+            text-shadow: 0 0 3px black, 0 0 5px black; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -20px;
+            padding-left: 5px;
+        }
+        input::placeholder {
+            color: rgb(146, 133, 133);
+            font-size: 1.5vw;
+        }
+        textarea{
+            resize: none;
+            width: 100%;
+            color: #ffffff;
+            text-shadow: 0 0 3px black, 0 0 5px black; 
+            height: 10vw;
+            background-color: #0c0c0c;
+        }
+        .golden{
+            color: #000;
+        }
+        #memss , #artee , #quote1{
+            width: 100%;
+        }
+        #quote1{
+            width: 100%;
+        }
+        .quote2{
+            background-color: #1a1a1ab9;
+            color: white;
+            text-shadow: 0 0 3px black, 0 0 5px black;
+            background: url(quds.jpg) no-repeat center ;
+            background-size: cover;
+        }
+        .quote2:hover{
+            animation: backquds;
+            transition: 1s;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes backquds{
+            0%{background: url(quds.jpg) no-repeat center ;
+            background-size: cover;}
+            5%{background: url(quds.jpg) no-repeat center ;
+            background-size: cover;
             }
+            10%{background: url(quds.gif) no-repeat center ;
+            background-size: cover;
+            }
+            95%{background: url(quds.gif) no-repeat center ;
+            background-size: cover;
+            }
+            100%{background: url(quds.jpg) no-repeat center ;
+            background-size: cover;}
+        }
+        .quote2 p {
+            font-size: 5vh;
+        }
+        #mess{
+        color: #088000; 
+           font-family: "Arial";
+           font-size: 1.3vw;
+           margin: 10px 0 0 10px;
+           background-color: #2b2b2b;
+           text-shadow: 0 0 3px black, 0 0 5px black; }
+           #mesf{
+        color: #ff0000; 
+           font-family: "Arial";
+           font-size: 1.3vw;
+           background-color: #2b2b2b;
+           margin: 10px 0 0 10px;
+           text-shadow: 0 0 3px black, 0 0 5px black; }
+        .lista3{
+            background-color: #1a1a1ab9;
+        }
+        .left{
+            left: 1;
+        }
+        .left {
+        overflow: hidden;
+        width: 30%;
+        float: left;
+        }
 
-            .overlay-text {
+        .left a {
+        
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        line-height: 60px;
+        font-size: 20px;
+        font-family:Nova Flat ;
+        text-shadow:0 0 20px #FFD700;
+        text-align: center;
+        width: auto;
+        font-size: 1.4vw;
+        }
+        .right{
+            overflow: hidden;
+            width: 30%;
+            float: right;
+            transition: 1s;
+        }
+        .right a {
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none; 
+        line-height: 60px;
+        font-size: 20px;
+        font-family:Nova Flat ;
+        text-shadow:0 0 20px #FFD700;
+        text-align: center;
+        width: auto;
+        font-size: 1.4vw;
+        }
+        #home{
+        display: flex;
+        justify-content: space-between;
+        }
+        .hrheader{
+            width: 100%;
+        }
+        #overlay{
+            height: 100vh;
+            top:0;
+            bottom: 0;
+            width: 10vh;
+              }
+              .overlay-text {
                 position: absolute;
-                top: 50%; 
+                top: 45%; 
                 left: 50%; 
                 transform: translate(-50%, -50%); 
                 font-family: nova flat;
@@ -637,162 +845,125 @@
                 padding: 10px 20px; 
                 font-size: 25px; 
                 text-align: center;
+                margin-top: auto;
+                margin-top: -20px;
+                margin-bottom: auto;
                 width: 90%;
+                margin-left: auto;
+                margin-right: auto;
                 animation: fam;
                 animation-duration: 9s;
                 animation-iteration-count: infinite;
             }
-            @keyframes fm {
-                0%   {color: rgba(243, 197, 197, 0.58);}
-                12.5%  { color: rgb(250, 172, 172);}
-                25%  {color: #f9d2d2;}
-                37.5%  {color: rgb(253, 177, 177);}
-                50% {color: #f3c5c594;}
-                62.5%  {color: rgb(250, 172, 172);}
-                75%  {color: #f9d2d2;}
-                87.5%  {color: rgb(253, 177, 177);}
-                100% {color: #f3c5c594;}
-              }
-              #overlay{
-                height: 100vh;
-                background: url(19.gif) no-repeat center center fixed;
+            #overlay{
+                margin-left: auto;
+                margin-right: auto;
+
+                width: 100%;
+                text-align: center;
+                background: url(32.gif) no-repeat center center fixed;
                 background-size: cover;
-                top:0;
-                bottom: 0;
-              }
-              #but{
-                width: 110px;
-                height: 40px;
-                background-color: #2626268f;
                 color: white;
-                font-size: 18px;
-                border: 2px solid black;
-                animation: but;
-                animation-duration: 4s;
-                animation-iteration-count: infinite;
-              }
-              @keyframes but{
-  0%   {top: 0px; left: 0px; border: 3px solid #262626;}
-  12.5%  {top: 0px; left: 10px; border: 3px solid #262626;}
-  25%  {top: 10px; left: 10px; border: 3px solid #a78e00;}
-  37.5%  {top: 10px; left: 0px; border: 3px solid #262626;}
-  50% {top: 0px; left: 0px; border: 3px solid #262626;}
-  62.5%  {top: 0px; left: 10px;  border: 3px solid #262626;}
-  75%  {top: 10px; left: 10px; border: 3px solid #a78e00;}
-  87.5%  {top: 10px; left: 0px; border: 3px solid #262626;}
-  100% {top: 0px; left: 0px; border: 3px solid #262626;}
-}
-              .b:hover{
-                transform: scale(0.9);
-              }
-              #but:hover{
-                transform: scale(0.9);
-              }
-              .h22{
-                color: white;
-                font-size: 27px;
-                text-shadow: 0 0 3px black, 0 0 5px  black;
-              }
-              #loa{
-                 mix-blend-mode: color-burn;
-              }
-              footer p {
+                text-shadow: 0 0 3px black, 0 0 5px black; 
+
+            }
+            .loa{
+                mix-blend-mode: color-burn;
+                width:"30%";
+                height:"30%";
+                }
+            .iconn{
+                width:"20%";
+                height:"20%";
+            }
+            .message{
+                font-size: 205px;
+            }
+            .lquoteloula{
+
+            }
+            .mybequest{
                 text-align: center;
+                font-size: 2vw;
+                letter-spacing: 2px;
+                font-family:Nova Flat ;
               }
-              .mybequest{
-                text-align: left;
-                margin-left :-25px;
-                width: 300px;
-                font-family: Nova Flat;
-                letter-spacing: 1px;
-              }
-              .mybequestt{
+              .mybequest2{
                 text-align: center;
-                margin-left :-25px;
-                width: 300px;
-                font-family: Nova Flat;
-                letter-spacing: 1px;
+                font-size: 1.7vw;
+                color: #262626;
+                letter-spacing: 3px;
               }
               .mybeqimg{
                 display: block;
-                margin-left: -20px;
+                width: 5vw;
+                height:5vw;
+                border-radius: 50%;
               }
-              footer table{
-                width: 110%;
+              .mybeq{
+                margin-left: auto;
+                margin-right: auto;
               }
-              footer table th{
-                width: 100%;
+              .hrmybeq{
+                width: 30vw;
+                margin-left: auto;
+                margin-right: auto;
               }
-              .le{
-                width: 80%;
+              .mybeqp{
+                margin-left: auto;
+                margin-right: auto;
               }
-              .le hr{
-                margin-left :-25px;
-                width: 240px;
-              }
-              .credits{
-                color: white;
-                font-size: 20px;
-                background-color: #262626;
-                
-                text-shadow: 0 0 3px black, 0 0 5px black; 
-                background-color: #0000002d;
-              }
-              .name{ font-family: Times New Roman ;
-                font-size: 15px;
-                animation: ddd;
-                animation-duration: 9s;
-                animation-iteration-count: infinite;
-            }
-            @keyframes ddd {
-                0%   {top: 0px; left: 0px; color: #c5c5f394;}
-                12.5%  {top: 0px; left: 10px; color: rgb(172, 172, 250);}
-                25%  {top: 10px; left: 10px; color: #d2f9f6;}
-                37.5%  {top: 10px; left: 0px; color: rgb(182, 177, 253);}
-                50% {top: 0px; left: 0px; color: #c5c5f394;}
-                62.5%  {top: 0px; left: 10px; color: rgb(172, 172, 250);}
-                75%  {top: 10px; left: 10px; color: #d2f9f6;}
-                87.5%  {top: 10px; left: 0px; color: rgb(182, 177, 253);}
-                100% {top: 0px; left: 0px; color: #c5c5f394;}
-            }
-            #alert{
-                position: fixed;
-                background-color: #262626f1;
-                z-index: 1000;
-                color: white;
-                margin: 0 auto;
+              .tq{
+                margin-left: auto;
+                margin-right: auto;
                 text-align: center;
-                width: 300px;
-                height: 250px;
-                margin-left:15%;
-                margin-right:auto;
-                margin-top:20px;
-            }
-            #butt{
-                width: 110px;
-                height: 40px;
-                background-color: #000000a2;
-                color: white;
-                font-size: 18px;
-                border: 2px solid black;
-                animation: but;
-                animation-duration: 4s;
-                animation-iteration-count: infinite;
               }
-            .backg{
-                background-color: #00000073;
+              .fq{
+                width: auto;
+                background-color: #00000093;
+                 border-radius: 8px;
+                box-shadow: 0 0 10px #666;
+              }
+              .fq:hover{
+                transition: 1s;
+                animation: backfq;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
             }
-            #knowmore{
+            @keyframes backfq{
+                0%{background-color: #00000093;}
+                5%{background-color: #00000093;
+                }
+                10%{background: url(classe.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                80%{background: url(classe.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                100%{background-color: #00000093;}
+            }
+              .margauot{
+                margin: auto;
+              }
+              .margauot:hover{
+                text-shadow:0 0 20px #1900ff;
+              }
+              header a {
+                margin-left: auto;
+                margin-right: auto;
+                text-decoration: none;
+              }
+              img{
+                /*pointer-events: none;*/
+              }
+              #knowmore{
                 border: 1px solid white;
-                background-color: green;
+                background-color: #0000008f;
                 color: white;
                 transition: 0.5s;
                 width: auto;
                 font-size: 2.3vh;
-                padding: 2%;
                 font-variant: small-caps;
-                margin-left: auto;
-                margin-right: auto;
                 margin-top: 5px;
                 margin-bottom: 15px;
               }
@@ -801,7 +972,47 @@
                 background-color: #ffffff8f;
                 color: black;
               }
-              #knowwmore{
+              .btnn{
+                border: 1px solid white;
+                background-color: #0000008f;
+                color: #FFD700;
+                transition: 0.5s;
+                width: auto;
+                font-size: 3vh;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                padding-top: 8px;
+                height: 40px;
+                padding-bottom: 4vh;
+              }
+              .btnn:hover{
+                border: 1px solid black;
+                background-color: #ffffff8f;
+                color: black;
+              }
+              .para4{
+                background-color: black;
+                width: 10%;
+                color: white;
+                font-size: 3vh;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .esp{
+                width: 20%;
+            }
+            .tan9is{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .arte{
+                background: url(museum.webp) no-repeat center ;
+            background-size: cover;
+            }
+            .tadhlil{
+            background-color: rgba(0, 0, 0, 0.603);
+        }
+        #knowwmore{
                 border: 1px solid white;
                 background-color: black;
                 color: white;
@@ -829,9 +1040,15 @@
             .dakhle p, .h2d, .h3d{
                 text-align: left;
             }
+            .tda{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
             .tda img{
                 width: 80%;
-                border: 1px solid black;
             }
             .mybeqq{
                 margin-left: auto;
@@ -839,18 +1056,19 @@
               }
               .mybeqimgg{
                 display: block;
-                width: 15vw;
-                height:15vw;
+                width: 7vw;
+                height:7vw;
                 border-radius: 50%;
               }
             #bc{
                 margin-top: 100px;
                 margin-bottom: 150px;
             }
-            .sd{
+            .sd  {
                 font-family: 'Open Sans', sans-serif;
                 color: rgb(206, 206, 206);
                 font-weight: 10;
+                font-size: 1.3vw;
             }
             .sdd{
                 font-family: 'Open Sans', sans-serif;
@@ -859,42 +1077,56 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            .h2d{
+            .sddd{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.5vw;
+            }
+            .h2d , .h2dd{
                 font-family:Nova Flat;
             }
             .h2dd{
-                margin-left: auto;
-                margin-right: auto;
-                font-family:Nova Flat;
-                color:#FFD700 ;
-                text-shadow: 0 0 3px black, 0 0 5px black; 
+                font-size: 3vw;
             }
+
             .h3d{
                 font-weight: 20;
                 color: #e6e6e6;
             }
-            .dimg1 img{
-                width: 80%;
-                height: 30vh;
+            
+            .dimg1:hover{
+                animation: dimg1;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
             }
-            .dimg1{
-                height: 30vh;
-                background:url(backdakhla.jpg) center no-repeat ;
+            @keyframes dimg1{
+                0%{background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;}
+                3%{background:url(backdakhla.jpg) center no-repeat;
                 background-size: cover;
-                margin-top: -20px;
-                margin-bottom: -20px;
-            }
+                }
+                8%{background: url(backhriga.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                80%{background: url(backhriga.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                100%{background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;}}
             .dimg2{
                 width: 40%;
+                height: 35vh;
+                margin-top: -10px;
+                margin-bottom: -10px;
             }
             .dimg2 img{
-                width: 90%;
-                height: 24vh;
-                border: 0px;
-                margin-left: -40px;
+                width: 50%;
+                height: 35vh;
             }
             .th1 .sd,.h2d{
                 margin-left: 10px;
+            }
+            .th1{
+                width: 45%;
             }
             .tda2{
                 margin-left: auto;
@@ -907,9 +1139,26 @@
                 border: 1px solid black;
                 height: 50vh
             }
+            .dimg1{
+                width: 40%;
+                height: 30vh;
+                background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;
+                margin-top: -20px;
+                margin-bottom: -20px;
+            }
+            .dimg1 img{
+                border: 0px;
+            }
             .tda2 .part2 img{
                 margin-top: -40px;
                 width: 100%;
+            }
+            .akber{
+                height: 40vw;
+            }
+            .akber th img{
+                height: 100%;
             }
             .lespace{
                 height: 40px;
@@ -926,179 +1175,162 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+            .white{
+                color: white;
+            }
             .le{
                 width: 80%;
             }
-            .lista1 .insta, .lista2 .insta{
-                width: 15px;
-                margin-bottom: -1px;
-                height: 15px;
+            .b{
+                width: auto;
+                padding: 10px 30px;
+                
             }
-            .green{
-                color: green;
-            }
-            .red{
-                color: red;
-            }
-            .esp{
-                width: 7%;
-            }
-            .q{
-                width: 50%;
-            }
-            .espace2{
-                width: 5%;
-            }
-            .dimg1:hover{
-                animation: dimg1;
-                animation-duration: 8s;
-                animation-iteration-count: infinite;
-            }
-            @keyframes dimg1{
-                0%{background:url(backdakhla.jpg) no-repeat center ;
-                background-size: cover;}
-                3%{background:url(backdakhla.jpg) no-repeat center ;
-                background-size: cover;
-                }
-                8%{background: url(backhriga.jpg) no-repeat center ;
-                background-size: cover;
-                }
-                80%{background: url(backhriga.jpg) no-repeat center ;
-                background-size: cover;
-                }
-                100%{background:url(backdakhla.jpg) no-repeat center ;
-                background-size: cover;}}
-            .tis3in{
-                width:90%;
-                height: 1px;
-            }
-            .lines{
+            .backblanchhh{
+                background-color: white;
+                padding-top: 20px;
+                width: 45vw;
+                padding-bottom: 50px;
                 margin-left: auto;
                 margin-right: auto;
             }
-            .animat{
-                animation: ddd;
-                animation-duration: 9s;
-                animation-iteration-count: infinite;
-            }
-            .persdakhla{
-                width: 100%;
-            }
-            .prod{
-                margin-left: auto;
-                margin-right: auto;
-                width: 80%;
-            }
-            .prod2 , .prod1{
-                height: 85vw;
-                width: 55vw;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                filter:drop-shadow(1px 1px 0 black) 
-                 drop-shadow(-1px -1px 0 white);
-            }
-            .prod1{
-                margin-right: 1vw;
-            }
-            .prod2{
-                margin-left: 1vw;
-                z-index: 2;
-                margin-top: -30vw;
-            }
-            .logoet{
-                background-color: rgba(0, 0, 0, 0.829);
-            }
-            .logoet table{
-                width: 100%;
-            }
-            .logoet tr{
-                width: 100%;
-            }
-            .logoet th {
-                width: 25%;
-            }
-            .logoet img{
-                width: 17vw;
-                height: 27vw;
-            }
-            
-
+        /*custom scroll bar from the internet*/
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: #525252;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #262626;
+            border-radius: 10px;
+        }
 </style>
 
 <body onload="alertt()">
-    <div id="overlay"><center><br><br><br><br><br><img src="pytho.png" width="20%" height="20%"><br>
-    <br><br><h2 font-family="Allerta Stencil" width="80" id="para1" class="h22">It might take couple <span class="gold">seconds</span>.
-        <h2 id="para" font-family="Allerta Stencil" width="80"  class="h22">website is <span class="gold">ready !</span></h2></h2>
-<br><br><br>
-<img src="loading.gif" width="30%" height="30%" id="loa">
-</center></div>
-<div  id="body">  
+    <div >
+    <div id="overlay"><center><br><br><img src="pytho.png" class="iconn"></center>
+    <br><br><center><h2 font-family="Allerta Stencil" class="messagee">It may take couple <span class="gold">seconds.</span></h2></center>
+    <br>
+        
+    </h2><br><br>
+<img src="loading.gif" class="loa"></center></div>
+</div>
+<div  id="all">
 <header >
         <section id="home">
-            <center><h1 class="title">Bac Info 2k24</h1></center>
+            <div class="left" id="left">
+                <a href="#memss" class="right1">moments</a>
+                <a href="#lista" class="right2">class</a>
+            </div>
+            <a href="#all"><h1 class="title">Bac Info 2k24</h1></a>
+            <div class="right" id="right">
+                <a href="#dakhla" class="left1">big Thing</a>
+                <a href="#artee" class="left2">our art</a>
+            </div>
     </section>
+    <hr class="hrheader">
     </header>
+    <div class="underall">
+        <div class="all" >
+            <div class="banner">
+                <img src="classebanner.jpg">
+                <div class="overlay-text">Our Family</div>
+                <hr class="hrbanner">
+            </div>
     
-<div class="banner">
-    <a href="classebanner.jpg"><img src="classebanner.jpg"></a>
-    <div class="overlay-text">Our Family</div>
+        <section class="codee" id="panel">
+            <br>
+<br>
+            <center><h3 class="h3">Want to feel like a developper?</h3></center>
+            <br>
+            <br>
+            <table border="0" class="command">
+                <tr>
+            <th colspan="3"><textarea readonly rows="5" id="message">Write these lines of codes down&#13;&#10;@import tools&#13;&#10;-GET Access&#13;&#10;/create website
+            </textarea></th>
+        </tr>
+    <tr>
+            <th colspan="2"><input type="text"id="t1" placeholder="code here" onkeyup="verif()"></th>
+        <th><button onclick="verif()">Code!</button></th>
+    </tr>
+    <tr>
+        <center><th colspan="3"><p id="mess" ></p></th></center>
+    </tr>
+    <tr>
+        <center><th colspan="3"><p id="mesf" ></p></th></center>
+    </tr>
+    <tr>
+    </table><br>
+        <center><button onclick="veriff()" class="btnn" id="skip">&nbsp; skip &nbsp;</button></center>
     
-</div>
-<hr class="hrbanner">
-<div class="underall">
-    <div class="tadhlil_khfif">
+        </section>
+        
 
 <section class="about" id="store">
+    <div id="quote1">
 <section class="quote">
 </br>
+<br>
+<div class="lquoteloula">
+    </br>
 </br>
-<br>   
-    <h4 class="accentgrave">``</h4>
-<hr4 class="accentaigu">``</hr4>
-    <center><div class="amoud"><img src="pytho.png"></div></center>
+<fieldset class="fq">
+    <br>
+    <table class="tq" border="0">
+        <tr>
+            <th class="accentgrave">``</th>
+    <th> <div class="amoud"><img src="pytho.png"></div></th>
+    <th class="accentaigu">``</th>
+    </tr>
+    </table>
     <hr class="hrquote">
-    <center><p class="pquote"><span class="backg">We are all guilty of allowing so-called experts, </span><span class="backg"> or just people who have </span><span class="backg"> more experience in a given </span><span class="backg"> field than we do, </span><span class="backg"> to cap our potential </span>
+    <center><p class="pquote"><span class="back">We are all guilty of allowing so-called experts, </span><span class="back"> or just people who have </span><span class="back"> more experience in a given </span><span class="back"> field than we do, </span><span class="bacg"> to cap our potential </span>
     </p></center>
+    <br>
+</div>
+</fieldset>
+    <br>
+    <br>
 
-    <br>
-    <br>
-    <br>
-</section>
 </section>
 </div>
-<section>
+</section>
+<br><br>
+<div id="lista">
+<section class="liste1">
+
 <div class="container">
 
 <hr>
 <hr>
-<span class="text1">Meet</span>
+<span class="text1"><span class="margauto">Meet</span></span>
 
-<span class="text2">Our Legendary Crew</span>
+<span class="text2"><span class="margauto">Our Legendary Crew</span></span>
 <hr>
 <hr>
 <hr>
-<div class="tadhlil">
 </Br>
 <br>
+<div class="tan9is">
 <center>
 <table border="0" class="lista1">
-   
+    <tr><br><br></tr>
 <tr>
-
     <th class="tsawer"><img src="adem.jpg"></th>
-<th class="tsawer"><img src="ahmed.jpg"></th>
-<th class="tsawer"><img src="achref.jpg"></th>
-
-</tr>
+    <th class="tsawer"><img src="ahmed.jpg"></th>
+    <th class="tsawer"><img src="achref.jpg"></th>
+    <th class="tsawer"><img src="akrem.jpg"></th>
+    </tr>
 
 <tr>
     <th><p class="asami">Adem</p></th>
     <th><p class="asami">Ahmed</p></th>
     <th><p class="asami">Achref</p></th>
-    
+    <th><p class="asami">Akrem</p></th>
 </tr>
 <tr><th><p class="desc">&nbsp;</p></th>
+    <th><p class="desc">&nbsp;</p></th>
     <th><p class="desc">&nbsp;</p></th>
     <th><p class="desc">&nbsp;</p></th>
 </tr>
@@ -1108,136 +1340,106 @@
     <table border="0" class="lista2">
 <tr>
     
-<th class="tsawer"><img src="akrem.jpg"></th>
+    <tr><br><br></tr>
 <th class="tsawer"><img src="ameni.jpg"></th>
+<th class="tsawer"><img src="iyed.jpg"></th>
+<th class="tsawer"><img src="jessem.jpg"></th>
 </tr>
 <tr>
-    <th><p class="asami">Akrem</p></th>
+    
     <th><p class="asami" >Ameni</p></th>
+    <th><p class="asami">Iyed</p></th>
+    <th><p class="asami">Jessem</p></th>
 </tr>
 <tr>
+
     <th><p class="desc">&nbsp;</p></th>
     <th><p class="desc">&nbsp;</p></th>
+    <th><p class="desc">Golden Boy</p></th>
 </tr>
 </center>
     </table>
+
 <table border="0" class="lista1">
-
-    <th class="tsawer"><img src="iyed.jpg"></th>
-    <th class="tsawer"><img src="jessem.jpg"></th>
+    <tr><br><br></tr>
+    <tr>
     <th class="tsawer"><img src="khalil.jpg"></th>
+    <th class="tsawer"><img src="ramez.jpg"></th>
+    <th class="tsawer"><img src="rasslen.jpg"></th>
+    <th class="tsawer"><img src="sejda.jpg"></th>
     </tr>
     <tr>
-        
-        <th><p class="asami">Iyed</p></th>
-        <th><p class="asami">Jessem</p></th>
     <th><p class="asami">khalil</p></th>
+    <th><p class="asami">Ramez</p></th>
+    <th><p class="asami">Rasslen</p></th>
+    <th><p class="asami">Sajida</p></th>
+    
     </tr>
     <tr>
+
+        <th><p class="desc">Joy Boy</p></th>
         <th><p class="desc">&nbsp;</p></th>
-        <th><p class="desc">Golden Boy</p></th>
-        <th><p class="desci"><a href="https://www.instagram.com/khaliil_arfaoui?igsh=bWZvbmxtY3Y2dDhk" ><img src="insta.png" class="insta"> Link</a></p></th></tr>
-
-
+        <th><p class="desc">&nbsp;</p></th>
+        <th><p class="desc">(Taylor's Version)</p></th>
+    </tr>
 </table>
-
-</br>
-</br>
 </div>
+</br>
+</br>
 </div>
 </section>
 <section class="liste2">
-<div class="tadhlil">
     <div class="container">
 <hr class="hrbanner">
 <br>
 <br>
+<div class="tan9is">
 <table border="0" class="lista1">
-   
+    <tr><br><br></tr>
     <tr>
-    
-        <th class="tsawer"><img src="ramez.jpg"></th>
-    <th class="tsawer"><img src="rasslen.jpg"></th>
-    <th class="tsawer"><img src="sejda.jpg"></th>
+        <th class="tsawer"><img src="sywar.jpg"></th>
+        <th class="tsawer"><img src="souhail.jpg"></th>
+        <th class="tsawer"><img src="mohamed.jpg"></th>
+        <th class="tsawer"><img src="omar.jpg"></th>
     
     </tr>
-    
+    <th><p class="asami">Siwar</p></th>
+        <th><p class="asami" >Souhail</p></th>
+        <th><p class="asami">Mohamed</p></th>
+        <th><p class="asami">Omar</p></th>
     <tr>
-        <th><p class="asami">Ramez</p></th>
-        <th><p class="asami">Rasslen</p></th>
-        <th><p class="asami">Sajida</p></th>
-        
-    </tr>
-    <tr><th><p class="desc">&nbsp;</p></th>
-        <th><p class="desc"><p class="desci"><a href="https://www.instagram.com/ashina_sekiiro?igsh=MWptMmpscHV5MzhqNQ==" ><img src="insta.png" class="insta"> Link</a></p></p></th>
-        <th><p class="desc">(Taylor's Version)</p></th>
+        <th><p class="desc">N/A</p></th>
+        <th><p class="desc">Taraji fanboy</p></th>
+        <th><p class="desc">&nbsp;</p></th>
+        <th><p class="desc">&nbsp;</p></th>
     </tr>
         </center>
     </table>
     <center>
         <table border="0" class="lista2">
-    <tr>
-        
-    <th class="tsawer"><img src="sywar.jpg"></th>
-    <th class="tsawer"><img src="souhail.jpg"></th>
-    </tr>
-    <tr>
-        <th><p class="asami">Siwar</p></th>
-        <th><p class="asami" >Souhail</p></th>
-    </tr>
-    <tr>
-        <th><p class="desc">&nbsp;</p></th>
-        <th><p class="desc">Taraji fanboy</p></th>
-    </tr>
     </center>
     <center>
         </table>
     <table border="0" class="lista1">
-    
-        
-        <th class="tsawer"><img src="mohamed.jpg"></th>
-        <th class="tsawer"><img src="omar.jpg"></th>
+        <tr><br><br></tr>
         <th class="tsawer"><img src="benothmen.jpg"></th>
+        <th class="tsawer"><img src="rhouma.jpg"></th>
+        <th class="tsawer"><img src="azizlamari.jpg"></th>
         </tr>
         <tr>          
-            <th><p class="asami">Mohamed</p></th>
-        <th><p class="asami">Omar</p></th>
         <th><p class="asami">Azyyz</p></th>
+        <th><p class="asami">AbdRahmen</p></th>
+        <th><p class="asami" >Aziz</p></th>
         </tr>
+        
         <tr>        
-            <th><p class="desc">&nbsp;</p></th>
-            <th><p class="desc">&nbsp;</p></th>
-            <th><p class="desci"><a href="https://www.instagram.com/azyyyyyz__?igsh=OG9jNXNvNjdzOG41"><img src="insta.png" class="insta"> Link</p></a></th></tr>
-    
-    
+        <th><p class="desc">&nbsp;</p></th>
+        <th><p class="desc">I do programming for life</p></th>
+        <th><p class="desc">&nbsp;</p></th>
+        </tr>
     </table>
 </center>
     </div>
-</div>
-</section>
-<section >
-<div class="tadhlil">
-<hr class="hrbanner">
-</br>
-</br>
-<center>
-    <table border="0" class="lista2">
-<tr>
-    
-<th class="tsawer"><img src="rhouma.jpg"></th>
-<th class="tsawer"><img src="azizlamari.jpg"></th>
-</tr>
-<tr>
-    <th><p class="asami">AbdRahmen</p></th>
-    <th><p class="asami" >Aziz</p></th>
-</tr>
-<tr>
-    <th><p class="desci"><a href="https://www.instagram.com/guitouni_mohamed_abderrahmen/"><img src="insta.png" class="insta"> Link</p></a></th>
-    <th><p class="desc">&nbsp;</p></th>
-</tr>
-</center>
-    
-</table>
 </br>
 </br>
 </br>
@@ -1245,113 +1447,134 @@
 </br>
 </div>
 </section>
-<section class="container">
-    <hr>
-<hr>
-<hr>
-    <span class="text1">Our</span>
 
-<span class="text2">Big thing</span>
-<hr>
-<hr>
-<hr>
-</section>
-<section class="dakhla">
-<div class="obt" id="bc">
-    <center> <h2 class="h2dd">" dakhla "</h2></center>
-    <br>
-   <center> <h2 class="h2" id="timeleft">loading</h2></center><br>
-   <button onclick="sound()" class="b"><img src="lock.png" width="50" height="50"></button><br>
-</div>
-<div class="dakhle" id="ac">
-    <div class="dakhle">
-        <br><center><img src="crown.png" height="100" width="100"></center><br><br>
-        <table class="tda" border="0">
-            <tr>
-                <th class="th1"><h2 class="h2d">Arabic King</h2>
-                    <br><p class="sd">We decided that nothing can represent us more than our arabic idendity, culture, history and especially our <span class="gold">Golden Age</span>.</p></th>
 
+</div>
+</section>
+<section class="dakhla" id="dakhla">
+<hr>
+<hr>
+<hr>
+<div class="container">
+<span class="text1"><span class="margauto">Our</span></span>
+<span class="text2"><span class="margauto">Big Thing</span></span></div>
+<hr>
+<hr>
+<hr>
+
+    <div class="obt" id="bc">
+        <div class="backblanchhh">
+       <center> <h2 class="h2" id="timeleft">loading</h2><br><br><br>
+       <button onclick="sound()" class="b"><img src="lock.png" width="50" height="50"></button></center></div>
+    </div>
+    
+    <div class="dakhle" id="ac">
+        <div class="dakhle">
+            <div class="tan9is">
+            <br>
+            <center><img src="crown.png" height="125" width="125"></center><br>
+            <table class="tda" border="0">
+                <tr>
+                    <th class="th1"><h2 class="h2dd">Arabic King</h2>
+                        <br><p class="sddd">We decided that nothing can represent us more than our arabic idendity, culture, history and especially our <span class="gold">Golden Age</span>.</p></th>
+                        <th class="espace2"></th>
+                        <th class="dimg2"><img src="persdakhla.jpg"></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><br><br></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><br><br></th>
+                </tr>
+                <tr>
+                    <th class="dimg1"></th>
                     <th class="espace2"></th>
-                    <th class="dimg2"><img src="persdakhla.jpg"></th>
-            </tr>
-            <tr>
-                <th colspan="3"><br><br></th>
-            </tr>
-            <tr>
-                <th class="dimg1" colspan="3"></th>
-            </tr>
-            <tr>
-                <th colspan="3" ><h2 class="h3d" >About</h2><br><p class="sd"><span class="gold">Veni</span>, <span class="gold">Vidi</span>, <span class="gold">Vici</span> : ("<span class="white">I came, I saw, I conquered</span>") is a Latin phrase used to refer to a swift, conclusive victory.  The phrase is popularly attributed to Julius Caesar.
-                </p><br><br><button id="knowwmore" onclick="link()">&nbsp;Know More&nbsp;</button></th>
-            </tr>
-        </table>
-</br>
-<hr><hr>
-</br>
-<table class="tda2" border="0">
-    <tr>
-        <th colspan="3" class="thth"><h3 class="h33">Dakhla</h3></th>
-    </tr>
-    <tr>
-        <th colspan="3" class="thth"><h4 class="sdd">100% original idea 🏳️</h4></th>
+                    <th><h2 class="h3d">About</h3><br><p class="sd"><span class="gold">Vini</span>, <span class="gold">Vidi</span>, <span class="gold">Vici</span> : ("<span class="white">I came, I saw, I conquered</span>") is a Latin phrase used to refer to a swift, conclusive victory.  The phrase is popularly attributed to Julius Caesar.
+                    </p> <br><br><button id="knowwmore" onclick="link()">&nbsp;Know More&nbsp;</button></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><br><br></th>
+                </tr>
+            </table>
+    </br>
+    <hr><hr>
+    </br>
+    <table class="tda2" border="0">
+        <tr>
+            <th colspan="3" class="thth"><h3 class="h33">Dakhla</h3></th>
         </tr>
-    <tr>
-        <th class="lespace" colspan="3">&nbsp;</th>
+        <tr>
+            <th colspan="3" class="thth"><h4 class="sdd">100% original idea 🏳️</h4></th>
+            </tr>
+        <tr>
+            <th class="lespace" colspan="3">&nbsp;</th>
+        </tr>
+        <tr class="akber">
+            <th class="p1"><img src="p1.jpg"></th>
+            <th class="part2"><img src="p2.jpg"></th>
+            <th><img src="p3.jpg"></th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table border="0" class="mybeqq">
+        <tr>
+        <th><img src="pytho.png" class="mybeqimgg"></th><th>&nbsp;&nbsp;&nbsp;</th>
+        <th class=""><a href="https://www.instagram.com/mono.graphics/"><img src="mono.jpg" class="mybeqimgg"></a></th>
     </tr>
-    <tr>
-        <th class="p1"><img src="p1.jpg"></th>
-        <th class="part2"><img src="p2.jpg"></th>
-        <th><img src="p3.jpg"></th>
-    </tr>
-</table>
-<br>
-<br>
-<br>
-<table border="0" class="mybeqq">
-    <tr>
-    <th><img src="pytho.png" class="mybeqimgg"></th><th>&nbsp;&nbsp;&nbsp;</th>
-    <th class=""><a href="https://www.instagram.com/mono.graphics/"><img src="mono.jpg" class="mybeqimgg"></a></th>
-</tr>
-</table>
-</br>
-</br>
-<hr class="hrbanner">
-<br><br>
-<center><h3 class="h33">produit</h3></center>
-<br>
-<br>
-<div class="prod">
-<img src="prod1.png" class="prod1">
-<img src="prod2.png" class="prod2">
-</div>
-</br>
-<br>
-</div>
-</div>
-
-</section>
-
+    </table>
+    </br>
+    </br>
+    </br>
+    </div>
+    </div>  
+    </div>
+    
+    </section>
 <section class="arte">
+<div id="artee">
     <div class="contact" >
 
 <hr>
 <hr>
 <hr>
-    <span class="text1">Art</span>
+    <span class="text1"><span class="margauto">Art</span></span>
 
-    <span class="text2">Made with our hands</span>
+    <span class="text2"><span class="margauto">Made with our hands</span></span>
 <hr>
 <hr>
 <hr>
-<div class="tadhlil">
 <br>
 <br>
-<center><marquee scrollamount="5">&nbsp;&nbsp;<img src="art1.jpg" height="200" width="200">&nbsp;&nbsp;<img src="art3.jpg" height="200" width="200">&nbsp;&nbsp;<img src="art5.jpg" height="200" width="200"></marquee></center>
     <br>
     <br>
     <br>
-<center><marquee scrollamount="5" direction="right">&nbsp;&nbsp;&nbsp;<img src="art4.jpg" height="200" width="200">&nbsp;&nbsp;<img src="art2.jpg" height="200" width="200">&nbsp;&nbsp;<img src="work2.PNG" height="200" width="200"></marquee></center>
-<br>
+    <center><marquee scrollamount="5">
+        <table>
+            <tr>
+                <th><img src="art1.jpg" height="200" width="200"></th>
+                <th class="espace"></th>
+                <th><img src="art3.jpg" height="200" width="200"></th>
+                <th class="espace"></th>
+                <th><img src="art5.jpg" height="200" width="200"></th>
+            </tr>
+        </table>
+    </marquee></center>
+    <br>
+    <br>
+        <center><marquee scrollamount="5" direction="right">
+        <table>
+            <tr>
+                <th><img src="art4.jpg" height="200" width="200"></th>
+                <th class="espace"></th>
+                <th><img src="art2.jpg" height="200" width="200"></th>
+                <th class="espace"></th>
+                <th><img src="work2.PNG" height="200" width="200"></th>
+            </tr>
+        </table>
+    </marquee></center>
+    <br>
 
 
 <br>
@@ -1360,8 +1583,12 @@
 <br>
 <br>
 </div>
+    </div>
 </section>
+<div id="pict">
 <hr class="hrbanner">
+
+<section>
 <br>
 <br>
 <br>
@@ -1372,140 +1599,162 @@
 <br>
 <br>
 <hr class="hrbanner">
-<div class="logoet">
-    <br>
-<table border="0">
-    <tr>
-        <th><img src="logo1.png"></th>
-        <th><img src="logo2.png"></th>
-        <th><img src="logo4.png"></th>
-        <th><img src="logo3.png"></th>
-    </tr>
-</table>
-<br>
-<br>
-<hr class="hrbanner">
 </div>
-<br></br>
-<hr class="hrbanner">
+</section>
+
     <section class="quote2">
-    <div class="tadhlil">
-        <br>
-        <br>
-        <h4 class="accentaigu">``</h4>
-<hr4 class="accentgrave">``</hr4>
-        <center><div class="amoud"><img src="pytho.png"></center>
+        <div id="quote2">
+            <div class="tadhlil">
+            <br>
+            <table class="tq" border="0">
+                <tr>
+                    <th class="accentgrave">``</th>
+            <th> <div class="amoud"><img src="pytho.png"></div></th>
+            <th class="accentaigu">``</th>
+            </tr>
+            </table>
         <hr class="hrquote">
          <center><p class="pquote2ar"> سُبْحَانَ الَّذِي أَسْرَى بِعَبْدِهِ لَيْلاً مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الأَقْصَى الَّذِي بَارَكْنَا حَوْلَهُ لِنُرِيَهُ مِنْ آيَاتِنَا إِنَّهُ هُوَ السَّمِيعُ البَصِيرُ </p></center>
-        </p></center> 
-        <center>
-            <table>
-                <tr>
-                    <th class="flags"><a href="https://www.versobooks.com/en-gb/blogs/news/solidarity-with-palestine-free-resources-and-further-reading"><img src="palestine2.jpg" class="pal"></a></th>
-                    <th class="esp">&nbsp;</th>
-                    <th class="q"><p class="pquote2arr">{1} (الإسراء)</p></th>
-                    <th class="esp">&nbsp;</th>
-                    <th class="flags"><img src="tunisia.png" class="pal"></th>
-                </tr>
-            </table></center>
-        <br>
-        <center>
+        </p></center> <center>
+        <table>
+            <tr>
+                <th class="flags"><a href="https://www.versobooks.com/en-gb/blogs/news/solidarity-with-palestine-free-resources-and-further-reading"><img src="palestine2.jpg" class="pal"></a></th>
+                <th class="esp">&nbsp;</th>
+                <th><p class="pquote2arr">{1} (الإسراء)</p></th>
+                <th class="esp">&nbsp;</th>
+                <th class="flags"><img src="tunisia.png" class="pal"></th>
+            </tr>
+        </table></center>
+         <br>
+         <center>
             <p class="arabquote">سَلامُُ<span class="green"> لأرض خُلقَت</span> للسَلام <span class="red">ومَا رأت يومًا سَلامًا</span> </p>
         </center>
         <br>
+        <br>     
         <br>
-<hr class="hrbanner">
+        <hr class="hrbanner">
+    </div>
 </div>
 </section>
 <br>
 <br>
         <br>
-    
-
 
 <section class="ourpics">
+    <div id="memss">
     <hr>
     <hr>
     <hr>
-        <span class="text1">Moments</span>
     
-        <span class="text2">we spent together</span>
+        <span class="text1"><span class="margauto">Moments</span></span>
+    
+        <span class="text2"><span class="margauto">we spent together</span></span>
     <hr>
     <hr>
     <hr>
+    <br>
+    <br>
 <table border="0" class="art">
     <tr>
+    <th colspan="2" class="mem1"><a href="img3.jpg"><img src="img3.jpg" height="100" width="200"></a></th>
+    
+    </tr>
+    <tr><th><br><br><br></th></tr>
     <tr><th colspan="2" class="mem1"><a href="img4.jpg"><img src="img4.jpg" height="100" width="200"></a></th></tr>
+    <tr><th><br><br><br></th></tr>
+    </table>
+    <table border="0" class="art2">
+
+   
+        <tr>
+            <th class="mem2"><a href="img6.jpg"><img src="img6.jpg" ></a></th>
+            <th class="mem2"><a href="img7.jpg"><img src="img7.jpg" ></a></th>
+        </tr>
+    
+    </table>
+    <table border="0" class="art">
     <tr>
     
         <th colspan="2" class="mem1"><a href="img2.jpg"><img src="img2.jpg" height="100" width="200"></a></th>
     
         
     </tr>
-</table>
-        <table border="0" class="art">
-
+    <tr><th><br><br><br></th></tr>
     <tr><th colspan="2" class="mem1"><a href="img1.jpg"><img src="img1.jpg" height="100" width="200"></a></th></tr>
-    <tr>
-        <th class="mem2"><a href="img6.jpg"><img src="img6.jpg" height="100" width="200"></a></th>
-        <th class="mem2"><a href="img7.jpg"><img src="img7.jpg" height="100" width="200"></a></th>
-    </tr>
-    <tr>
-    
-        
-    
-        
-    </tr>
+    <tr><th><br><br><br></th></tr>
 </table>
+        
+<br><br><br>
 </section>
 </div>
-<footer>
-<center>
-<br>
-<table border="0" class="tbequest">
-    <tr>
-        <th class="le">
-<p class="mybequest">next seniors, continue the job.<br>
-    create a website every year.<br>
-    let's make this our tradition !<br></p></th><th>
-    <a href="https://drive.google.com/drive/mobile/folders/1udtA_jOdWUyJEOWdAvyGIQJzcMco61Rp?fbclid=IwAR3UK1TGLM4dJv98CP8_ZFNBfYqSixdIV3l8v757Vp1AIMA6D6i7wRSXG08"><img class="mybeqimg" src="pytho.png" width="55" height="55"></a></th>
-</tr>
-<tr>
-    <th class="le">
-       <hr>
-    </th>
-    <th> </th>
-</tr>
-</table>
-<br><br>
-<button id="knowmore" onclick="history()">Discover how we did all of this</button>
-<br><br><div class="lines"><center>
-<p class="mybequestt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total number of lines of the code: <span class="animat">1552</span></p></center></div>
-<br><br>
-<p class="name">made by everyone of us</p>
-</center>
+</div>
+<footer><div id="mybequest">
+    <br><table border="0" class="mybeqp"><tr><th><p class="mybequest">next seniors, continue the job.
+        create a <br>website every year.
+        let's make <br>this  our tradition !</p></th>
+    </tr><tr><th><br></th></tr><tr><tr><th><hr class="hrmybeq"></th></tr><tr><th><br></th></tr><tr>
+<th><p class="mybequest2">2K25  2K26  2K27  2K28  2K29  2K30</p></th></tr>
+    </tr></table>
+    
+        <br><table border="0" class="mybeq">
+            <tr>
+            <th><img src="pytho.png" class="mybeqimg"></th><th>&nbsp;&nbsp;&nbsp;</th>
+            <th><img src="tunisia.gif" class="mybeqimg"></th>
+        </tr>
+    </table><br><p class="mybequest">total number of lines: <span class="animat">1850</span>.</p>
+    <br><br><button id="knowmore" onclick="history()">Discover how we did all of this</button>
+    <br><br><br>
+</div>
+
+<p class="name">made by everyone of us </p>
 </footer>
 </div>  
+</div>
+</div>
 </body>
 </html>
+
+
+
 <script>
     LetTheDogsOut=true;
-    ol=document.getElementById("overlay");
-    body=document.getElementById("body");
+    dakhla=document.getElementById("dakhla");
+    document.getElementById("dakhla").style.display="none";
+    left=document.getElementById("left");
+    right=document.getElementById("right");
+    body=document.getElementById("all");
+    quote1=document.getElementById("quote1");
+    quote2=document.getElementById("quote2");
+    lista=document.getElementById("lista");
+    pict=document.getElementById("pict");
+    artee=document.getElementById("artee");
+    memss=document.getElementById("memss");
+    all=document.getElementById("all");
+    panel=document.getElementById("panel");
     body.style.display="none";
-        para.style.display="none";
+    left.style.display="none";
+    right.style.display="none";
+    quote1.style.display="none";
+    quote2.style.display="none";
+    lista.style.display="none";
+    pict.style.display="none";
+    artee.style.display="none";
+    memss.style.display="none";
+    document.getElementById("mybequest").style.display="none";
+    /* js is a mess that i prefer to ignore */
+    ol=document.getElementById("overlay");
     window.addEventListener("load",function(){
-        loa.style.display="none";
-        para1.style.display="none";
-        para.style.display="inline";
-    });
-    function alertt(){
-    setTimeout(main, 1500);
-function main(){ol.style.display="none";
+        ol.style.display="none";
         body.style.display="inline";
-        }}
+        
+    })
+    t1.addEventListener("keydown", function (e) {
+    if (e.code === "Enter") {  
+        verif(e);
+    }
+});
 function hide(){document.getElementById("alert").style.display="none";}
-var countDownDate = new Date("FEB 29, 2024 16:00:00").getTime();
+var countDownDate = new Date("FEB 26, 2023 16:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -1526,18 +1775,86 @@ a.style.display="none";
 document.addEventListener('contextmenu', event => event.preventDefault());
 function sound(){
     if (document.getElementById("timeleft").textContent == "Just a Moment!" && LetTheDogsOut==true){
-    sout = new Audio('sound.mp3');
-     sout.play();
-     b.style.display="none";
-     a.style.display="inline";}
+        document.getElementById("ac").style.display="inline";
+     b.style.display="none";}
     }
+st="";
+s1=0;
+s2=0;
+function verif(){
+    message = document.getElementById('mess');
+    messagef = document.getElementById('mesf');
+    a=document.getElementById("t1").value;
+    body.style.display="inline";
+    if (a=="@import tools" && s1==0){
+        st+="wel";
+        s1=1;
+        messagef.innerHTML ="";
+        message.innerHTML ="Step 1 accomplished!";
+        document.getElementById("t1").value+="Step 1 accomplished!"
+        a=document.getElementById("t1").value="";
+    }
+    if (a=="@import tools" && s1==1){
+        message.innerHTML ="";
+        messagef.innerHTML ="Step 1 Already Made !";
+    }
+    if (a=="-GET Access" && st=="wel" && s2==0){
+        st+="come";
+        s2=1;
+        messagef.innerHTML ="";
+        message.innerHTML ="Step 2 accomplished!";
+        a+="Step 2 accomplished!"
+        a=document.getElementById("t1").value="";
+    }
+    if (a=="-GET Access"  && s2==1){
+        message.innerHTML ="";
+        messagef.innerHTML ="Step 2 Already Made !";
+    }
+    if(a=="/create website" && st=="welcome"){
+        st+="!"
+        message.innerHTML ="Welcome ! :)";
+        a=document.getElementById("t1").value="";
+        messagef.innerHTML ="";
+        document.getElementById("skip").style.display="none";
+        setTimeout(veriff, 1500);
+    }
+    
+    if (a !="" && a!="@import tools" && a!="-GET Access") {
+        message.innerHTML ="";
+        messagef.innerHTML ="<erreur>"+ a+" is not defined ! </erreur>";
+    }
+    if (a =="" && st!="welcome!") {
+        
+        messagef.innerHTML ="";
+    }
+    if(a=="" && st=="welcome!"){
+        message.innerHTML ="Welcome ! :)";
+    }
+}
+function veriff(){
+    open()
+}
+function open(){
+        panel.style.display="none";
+        all.style.display="inline";
+        quote1.style.display="inline";
+        quote2.style.display="inline";
+        lista.style.display="inline";
+        pict.style.display="inline";
+        artee.style.display="inline";
+        memss.style.display="inline";
+        left.style.display="inline";
+        right.style.display="inline";
+        document.getElementById("mybequest").style.display="inline";
+        dakhla.style.display="inline";
+}
+document.addEventListener('contextmenu', event => event.preventDefault());
+function link() {
+  window.location.href = "https://en.wikipedia.org/wiki/Veni,_vidi,_vici#:~:text=Veni%2C%20vidi%2C%20vici%20(Classical,to%20a%20swift%2C%20conclusive%20victory.";
+  }
     function history() {
   window.location.href = "https://bacinfo2024.github.io/history/";
   }
-  function link() {
-  window.location.href = "https://www.google.com/search?client=opera-gx&q=page+thezz+l+falten+l+fouleni&sourceid=opera&ie=UTF-8&oe=UTF-8";
-  }
-  
 </script>
 <!--   
                                                  #    #
@@ -1559,14 +1876,14 @@ function sound(){
        %%%%%% ########################################
     % %%%%%%% ########################################
      %%%%%%%%% #######################################
-    %%%%%%%%%% ########################################
+    %%%%%%%%% ########################################
  %%% %%%%%%%%   ###### ################################
    %%%%%%%%      ###### #################### ##########
 % %%%%%%%%        ####### ########### ###### ##########
  %%%%%%%%%         #######  ########### ###### ########
 %%%%%%%%%%          ##### ###  ######### ####### ######
  %%%%%%%%%%          #### ##               ####### ####
- %%%%%%%%%%%           ## #                  ##### ###
+ %%%%%%%%%%           ## #                  ##### ###
   %%  %% % %%         # ##                      ## ###
     %   %    %        # ###                      # ###
                        # ###                     ## ###
